@@ -18,7 +18,7 @@ before_script:
    - update-alternatives --set java $java_path
    - java -version
    
-build_image: shippableImages/ubuntu1404_java
+build_image: shipimg/ubuntu1204_java
 
 after_success:
    - mvn clean cobertura:cobertura
